@@ -4,4 +4,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   modules: ['@nuxt/ui', '@nuxt/eslint'],
+  runtimeConfig: {
+    openaiApiKey: '9293i4sd',
+    public: {
+      appName: 'convai'
+    }
+  }
 })
