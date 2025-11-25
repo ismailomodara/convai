@@ -14,5 +14,5 @@ const { chat, messages, sendMessage } = useChat()
 </script>
 
 <template>
-  <ChatWindow :chat :messages @sendMessage="sendMessage" />
+  <ChatWindow :chat :messages @send-message="sendMessage" />
 </template>
