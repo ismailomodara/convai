@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type {Chat, ChatMessage} from "~/types";
+import type { ChatMessage, Chat } from '@/types'
 
 const props = defineProps<{
-  chat: Chat;
-  messages: ChatMessage[];
-  typing: boolean;
+  messages: ChatMessage[]
+  chat: Chat
+  typing: boolean
 }>()
 
 const emit = defineEmits(['send-message'])
@@ -46,7 +46,9 @@ watch(() => props.messages, pinToBottom, { deep: true })
             }"
           >
             <div class="message-content">
-              <MarkdownRenderer :content="message.content" />
+              <MarkdownRenderer
+                  :content="message.content"
+              />
             </div>
           </div>
 
